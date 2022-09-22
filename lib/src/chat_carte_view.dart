@@ -14,23 +14,13 @@ class ChatCarteView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // padding: EdgeInsets.only(top: 12.h, bottom: 4.h),
+      padding: EdgeInsets.only(top: 4.h, bottom: 4.h),
       width: 200.w,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(6),
-        // border: Border.all(
-        //   color: Color(0xFFECECEC),
-        //   width: 0.5,
-        // ),
-        boxShadow: [
-          BoxShadow(
-            color: Color(0xFF000000).withOpacity(0.1),
-            offset: Offset(0, 2.h),
-            blurRadius: 4,
-          ),
-        ],
-      ),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(8),
+          border:
+              Border.all(width: 1, color: Color.fromARGB(255, 247, 247, 247))),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -59,12 +49,15 @@ class ChatCarteView extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            color: Color(0xFFE9E9E9),
-            height: 1.h,
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.w),
+            child: Container(
+              color: Color(0xFFE9E9E9),
+              height: 1 / MediaQuery.of(context).devicePixelRatio,
+            ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 3.h, bottom: 4.h, left: 25.w),
+            padding: EdgeInsets.only(top: 3.h, bottom: 4.h, left: 16.w),
             child: Text(
               UILocalizations.carte,
               overflow: TextOverflow.ellipsis,

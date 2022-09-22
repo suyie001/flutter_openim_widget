@@ -178,14 +178,14 @@ class _ChatInputBoxViewState extends State<ChatInputBoxView>
             padding: EdgeInsets.symmetric(vertical: 12.h),
             decoration: BoxDecoration(
               color: widget.background ?? Color(0xFFE8F2FF),
-              boxShadow: [
-                BoxShadow(
-                  color: Color(0xFF000000).withOpacity(0.12),
-                  offset: Offset(0, -1),
-                  blurRadius: 4,
-                  spreadRadius: 0,
-                ),
-              ],
+              // boxShadow: [
+              //   BoxShadow(
+              //     color: Color(0xFF000000).withOpacity(0.12),
+              //     offset: Offset(0, -1),
+              //     blurRadius: 4,
+              //     spreadRadius: 0,
+              //   ),
+              // ],
             ),
             child: Column(
               children: [
@@ -305,7 +305,7 @@ class _ChatInputBoxViewState extends State<ChatInputBoxView>
         alignment: Alignment.center,
         constraints: BoxConstraints(minHeight: kVoiceRecordBarHeight),
         decoration: BoxDecoration(
-          color: Color(0xFFFFFFFF),
+          color: Colors.blueGrey.withAlpha(20),
           borderRadius: BorderRadius.circular(4),
         ),
         child: Stack(

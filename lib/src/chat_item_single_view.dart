@@ -272,10 +272,10 @@ class ChatSingleLayout extends StatelessWidget {
         // padding: EdgeInsets.all(1),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(6),
-          border: Border.all(
-            color: Color(0xFFE6E6E6),
-            width: 1,
-          ),
+          // border: Border.all(
+          //   color: Color(0xFFE6E6E6),
+          //   width: 1,
+          // ),
           // boxShadow: [
           //   BoxShadow(
           //     color: Color(0xFF000000).withOpacity(0.1),

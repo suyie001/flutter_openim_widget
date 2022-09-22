@@ -313,7 +313,9 @@ class ChatRecordVoiceView extends StatelessWidget {
       );
 
   Widget _unselectedSoundToWordAreaView() => Visibility(
-        visible: !selectedSoundToWordArea,
+        // visible: !selectedSoundToWordArea,
+        //语音转文字按钮ui
+        visible: false,
         child: ImageUtil.assetImage(
           'ic_voice_record_zi_grey',
           width: 82.w,

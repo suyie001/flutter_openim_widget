@@ -95,6 +95,7 @@ class _ChatVoiceRecordLayoutState extends State<ChatVoiceRecordLayout> {
             child: ChatRecordVoiceView(
               selectedCancelArea: _selectedCancelArea,
               selectedSoundToWordArea: _selectedSoundToWordArea,
+          
               selectedPressArea: _selectedPressArea,
               showSpeechRecognizing: _showSpeechRecognizing,
               showRecognizeFailed: _showRecognizeFailed,
@@ -150,7 +151,7 @@ class _ChatVoiceRecordLayoutState extends State<ChatVoiceRecordLayout> {
             _showSpeechRecognizing = false;
           });
         });
-        _showSpeechRecognizing = true;
+         _showSpeechRecognizing = true;
         _showVoiceRecordView = true;
         _selectedPressArea = false;
         _selectedCancelArea = false;
