@@ -231,4 +231,6 @@ class UILocalizations {
       _value(key: 'groupOwnerOrAdminRevokeAMsg');
 
   static String get recentlyUsed => _value(key: 'recentlyUsed');
+
+  
 }
